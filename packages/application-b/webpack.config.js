@@ -35,12 +35,13 @@ module.exports = {
       library: { type: 'var', name: 'application_b' },
       filename: 'remoteEntry.js',
       exposes: {
-        'SayHelloFromB': './src/app',
+        // 'SayHelloFromB': './src/app',
+        'AppAgendaChild': './src/app',
       },
       remotes: {
         'application_a': 'application_a',
       },
-      shared: ['react', 'react-dom'],
+      shared: ['lit-element', 'lit-html'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

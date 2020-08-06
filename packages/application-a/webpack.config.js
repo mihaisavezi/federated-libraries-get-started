@@ -34,13 +34,17 @@ module.exports = {
       name: 'application_a',
       library: { type: 'var', name: 'application_a' },
       filename: 'remoteEntry.js',
+      // TESTING - when parent exposes nothing
+      // exposes: {
+      //   'AppZero': './src/app',
+      // },
       exposes: {
-        'SayHelloFromA': './src/app',
+        'AppZero': './src/app',
       },
       remotes: {
         'application_b': 'application_b',
       },
-      shared: ['react', 'react-dom'],
+      shared: ['lit-element', 'lit-html'],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

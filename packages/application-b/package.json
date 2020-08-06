@@ -5,9 +5,10 @@
   "scripts": {
     "start": "serve dist -p 3002",
     "build": "webpack --mode production",
-    "dev": "concurrently \"webpack --watch\" \"serve dist -p 3002\""
+    "dev": "concurrently \"webpack --mode development --watch\" \"serve dist -p 3002\""
   },
   "dependencies": {
+    "lit-element": "^2.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
