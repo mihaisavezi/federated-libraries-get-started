@@ -2,6 +2,7 @@
 
 See the accompanying article at: [https://federated-libraries.now.sh/get-started](https://federated-libraries.now.sh/get-started)
 
+run `yarn dev` to start the applications
 
 # Issue
 `application-a` exposes `SharedFromA` to `application-b` and imports `AppAgendaChild`
