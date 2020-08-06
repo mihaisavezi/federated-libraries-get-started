@@ -1,5 +1,4 @@
 import './app';
-import AppZero from 'application_a/AppZero';
 
 import {LitElement, html, css} from 'lit-element';
 import {render} from 'lit-html';
@@ -50,7 +49,7 @@ export class AppTwo extends LitElement {
       </button>
       <app-one></app-one>
       <app-agenda-child></app-agenda-child>
-      <app-zero></app-zero>
+      <shared-from-a></shared-from-a>
       <slot></slot>
     `;
   }

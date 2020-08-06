@@ -1,12 +1,7 @@
-// import React from 'react';
-
-// export default function SayHelloFromB() {
-//   return <h1>Hello from Application B!</h1>;
-// }
-
 import {LitElement, html, css} from 'lit-element';
-import {AppZero} from 'application_a/AppZero';
 
+// Comment this for application-a to work
+// import {SharedFromA} from 'application_a/SharedFromA';
 /**
  * An example element.
  *

@@ -1,9 +1,3 @@
-// import React from 'react';
-
-// export default function SayHelloFromA() {
-//   return <h1>Hello from Application A!</h1>;
-// }
-
 import {LitElement, html, css} from 'lit-element';
 
 /**
@@ -12,7 +6,7 @@ import {LitElement, html, css} from 'lit-element';
  * @slot - This element has a slot
  * @csspart button - The button
  */
-export class AppZero extends LitElement {
+export class SharedFromA extends LitElement {
   static get styles() {
     return css`
       :host {
@@ -60,4 +54,4 @@ export class AppZero extends LitElement {
   }
 }
 
-window.customElements.define('app-zero', AppZero);
+window.customElements.define('shared-from-a', SharedFromA);

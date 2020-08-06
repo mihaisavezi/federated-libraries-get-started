@@ -36,10 +36,10 @@ module.exports = {
       filename: 'remoteEntry.js',
       // TESTING - when parent exposes nothing
       // exposes: {
-      //   'AppZero': './src/app',
+      //   'SharedFromA': './src/app',
       // },
       exposes: {
-        'AppZero': './src/app',
+        'SharedFromA': './src/app',
       },
       remotes: {
         'application_b': 'application_b',
