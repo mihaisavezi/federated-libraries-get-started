@@ -2,6 +2,11 @@ import {LitElement, html, css} from 'lit-element';
 
 // Comment this for application-a to work
 // import {SharedFromA} from 'application_a/SharedFromA';
+
+// import {HostExports} from 'application_a/HostExports';
+import { value, HostExports } from 'application_a/tracking/system';
+
+console.log({HostExports, value});
 /**
  * An example element.
  *

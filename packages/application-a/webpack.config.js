@@ -40,9 +40,13 @@ module.exports = {
       // },
       exposes: {
         'SharedFromA': './src/app',
+        // 'HostExports': './src/deps',
+        // 'HostExports': './src/exports',
+        './tracking/system': './src/exports',
       },
       remotes: {
         'application_b': 'application_b',
+        // 'application_a': 'application_a',
       },
       shared: ['lit-element', 'lit-html'],
     }),

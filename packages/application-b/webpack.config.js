@@ -36,7 +36,7 @@ module.exports = {
       filename: 'remoteEntry.js',
       exposes: {
         // 'SayHelloFromB': './src/app',
-        'AppAgendaChild': './src/app',
+        './AppAgendaChild': './src/app',
       },
       remotes: {
         'application_a': 'application_a',
